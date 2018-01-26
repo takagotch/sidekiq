@@ -11,3 +11,5 @@ def create
   end
 end
 
+PygmentsWorker.perform_in(1.hour, @snippet.id)
+
